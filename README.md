@@ -1,4 +1,2 @@
-# Excercise For using a tuple and indexing the output with the tuple
-A=[1,2,3,4,5]
-for a in range(0,5):
-    print(A[a])
+This repository contains very basic examples using loops
+It works for understand a few basics concepts and how I understand the basic functions and loops
