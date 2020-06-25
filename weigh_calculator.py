@@ -1,4 +1,5 @@
 #Weight converter and narrowing the variable L and K to only two options per unit, in this case we can use the 
+#if / elif / else to avoid unit =! than the expected "L/l or K/k" letters
 weight = float(input("Enter your weight"))
 unit=input("Kilos(k) or Lbs(L)")
 if unit=="L" or unit=="l":
