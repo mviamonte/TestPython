@@ -1,11 +1,14 @@
-input_user=input()
-if input_user == "help" or input_user == start or input_user == stop or input_user ==quit:
-  if input_user == help:
-    print ('''
-    command start --- Start for start the car
-    command stop --- Stop for stop the car
-    command quit --- Quit to exit''')
-  if input_user == start:
-    print ("Car started, ready to go")
+command = "" #Empty variable
+while command !="quit": #Programs runs while the quit command is not called
+  command = input("> ").lower()
+  if command == "start":
+    print ("Car started")
+  elif command == "stop":
+    print ("Car stopped")
+  elif command == "help":
+    print ("""
+start --- For start the car
+stop --- For stop the car
+quit --- For quit the game""")
 else:
-  print("I don't understand the command")
+  print("The game has been terminated") 
