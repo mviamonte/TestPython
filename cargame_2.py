@@ -1,10 +1,17 @@
 command = "" #Empty variable
+start=0
+stop=0
 while True: #Programs always runs, the condition are met in the next block of code
   command = input("> ").lower() # input using a "fake" prompt and forcing to be lowercase
   if command == "start":
-    print ("Car started")
+    if start ==0:
+      print ("Car started")
+      start=start+1
+    else:
+      print ("Car already started")
   elif command == "stop":
     print ("Car stopped")
+    stop=stop+1
   elif command == "help":
     print ("""
 start --- For start the car
