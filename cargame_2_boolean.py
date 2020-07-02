@@ -5,12 +5,13 @@ while True: #Programs always runs, the condition are met in the next block of co
   if command == "start":
     if started == False:
       print ("Car started")
-      started == True
+      started = True
     else:
       print ("Car already started")
   elif command == "stop":
-    if started == False:
+    if started == True:
       print ("Car stopped")
+      started = False
     else:
       print ("Car already stopped")
   elif command == "help":
