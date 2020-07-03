@@ -7,7 +7,6 @@ numbers = [
     958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
     743, 527
 ]
-i = 0
 numbers_odd=[] #The new empty list for the odds
 numbers_even=[] # The new empty list for the evens
 number=len(numbers) #Size of the list to generate the new two list with a single for loop. Every list has 50 numbers. 
@@ -18,3 +17,4 @@ for i in range(number):
         numbers_odd.append(i)
 print(numbers_odd)
 print(numbers_even)
+#print (len(numbers_even)) To determine the amount of members of the new list
