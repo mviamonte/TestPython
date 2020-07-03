@@ -10,7 +10,7 @@ numbers = [
 i = 0
 numbers_odd=[] #The new empty list for the odds
 numbers_even=[] # The new empty list for the evens
-number=len(numbers) #Size of the list to generate the new two list with a single for loop
+number=len(numbers) #Size of the list to generate the new two list with a single for loop. Every list has 50 numbers. 
 for i in range(number):
     if i%2 ==0: #start with the odds
         numbers_even.append(i)
