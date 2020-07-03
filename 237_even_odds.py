@@ -1,3 +1,4 @@
+#list of 1000 numbers
 numbers = [
     951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
     615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
@@ -7,10 +8,15 @@ numbers = [
     958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
     743, 527
 ]
-i = 0
-numbers_odd=[]
-numbers_even=[]
-while numbers[i] != 237:
+i = 0 #defining the index to start "looping"
+numbers_odd=[] #defining the empty array (not sure if it's a list or a tuple) for odd's numbers
+numbers_even=[] #defining the empty array (not sure if it's a list or a tuple) for even numbers
+while numbers[i] != 237: #While the number in the array it's different than 237, it means until reach 237 this loop will execute the rest of the block (the if / else part)
     i = i+1
-    if numbers[i]%2 ==0:
-        print(numbers[i])
+    if numbers[i]%2 ==0: #determine the odd number
+        numbers_even.append(numbers[i]) #saving the even number in the other list
+    else:
+        numbers_odd.append(numbers[i]) #saving the odd number in the other list
+print(numbers_even[-1])
+print(numbers_odd[-1])
+ 
