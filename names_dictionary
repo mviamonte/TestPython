@@ -1,15 +1,15 @@
-birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'}
-while True:
+birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'} #Initial definition of the dictionary. It will be updated in the program during it's execution
+while True:                                                       #The way to keep the program running, the only way to leave the code if blank in the prompt
     print('Enter a name: (blank to quit)')
     name = input()
-    if name == '':
+    if name == '':                                                #If we enter blank, the programs ends with break 
         break
 
-    if name in birthdays:
+    if name in birthdays:                                         #If the input exists in the dictionary, print the next command
         print(birthdays[name] + ' is the birthday of ' + name)
-    else:
+    else:                                                         #Otherwise, the program will store another entry in the dictionary. 
         print('I do not have birthday information for ' + name)
         print('What is their birthday?')
         bday = input()
-        birthdays[name] = bday
-        print('Birthday database updated.')
+        birthdays[name] = bday                                    #New entry using the new name capture in input and the bday using the second input() call
+        print('Birthday database updated.')                       #Message to notify user about the update in the dictionary and return to the while instruction
